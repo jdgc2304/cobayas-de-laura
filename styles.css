@@ -1,5 +1,6 @@
 :root {
   --primary-color: #b05abb73;
+  --antique-white: antiquewhite;
 }
 
 *,
@@ -13,11 +14,12 @@
 }
 
 body {
+  width: 100%;
   background-color: var(--primary-color);
 }
 
 header {
-  background-color: antiquewhite;
+  background-color: var(--antique-white);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -33,11 +35,14 @@ header h1 {
 
 header p {
   font-size: 32px;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 nav {
-  background-color: rgba(204, 112, 247, 0.938);
+  background-image: url("./assets/fondo-arcoiris.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
   height: 100px;
   width: 100%;
   overflow: hidden;
@@ -52,7 +57,7 @@ nav ul {
   padding: 0 48px;
   gap: 3rem;
   list-style: none;
-  overflow-x: auto ;
+  overflow-x: auto;
 }
 
 nav ul li {
@@ -70,8 +75,35 @@ nav ul li a:hover {
   color: white;
 }
 
+main {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  max-width: 1440px;
+}
+
+h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.text-container {
+  background-color: var(--antique-white);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   header {
     flex-direction: row;
+  }
+
+  main {
+    padding: 2rem 4rem;
   }
 }
