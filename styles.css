@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background-color: var(--antique-white);
+  background: linear-gradient(to top, var(--antique-white), #e100ff73);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -29,6 +29,7 @@ header {
 }
 
 header h1 {
+  filter: drop-shadow(0 0 1rem white);
   font-size: 36px;
   text-transform: uppercase;
 }
@@ -95,6 +96,7 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: justify;
+  font-size: 1rem;
   gap: 2rem;
 }
 
@@ -105,5 +107,9 @@ h2 {
 
   main {
     padding: 2rem 4rem;
+  }
+
+  .text-container {
+    font-size: 1.5rem;
   }
 }
