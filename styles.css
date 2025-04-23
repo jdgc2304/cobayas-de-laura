@@ -68,7 +68,8 @@ nav ul li {
 nav ul li a {
   font-size: 24px;
   text-transform: uppercase;
-  color: rgb(14, 0, 138);
+  color: rgb(255, 0, 149);
+  filter: drop-shadow(0 0 1px purple);
   text-decoration: none;
 }
 
@@ -98,6 +99,29 @@ h2 {
   text-align: justify;
   font-size: 1rem;
   gap: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.grid-item {
+  background-color: var(--antique-white);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.grid-item:hover {
+  background-color: rgb(218, 144, 236);
+  color: white;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
