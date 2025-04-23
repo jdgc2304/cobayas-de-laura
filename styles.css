@@ -28,7 +28,9 @@ body {
 
 header {
   width: 100%;
-  background: linear-gradient(to top, var(--antique-white), #e100ff73);
+  background: url("./assets/fondo-de-estrellas.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -47,6 +49,7 @@ header h1 {
 header p {
   font-size: 32px;
   margin: 1rem 0;
+  color: rgb(255, 164, 214);
 }
 
 nav {
