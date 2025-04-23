@@ -75,7 +75,7 @@ nav ul li a {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: rgb(255, 0, 149);
-  filter: drop-shadow(0 0 1px purple);
+  text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -144,6 +144,13 @@ h2 {
 
   .text-container {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header h1 {
+    font-size: 48px;
+    text-transform: uppercase;
   }
 }
 
