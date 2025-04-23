@@ -141,3 +141,27 @@ h2 {
     font-size: 1.5rem;
   }
 }
+
+.masked-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: transparent;
+  filter: drop-shadow(0 0 1rem black);
+  background-image: url('./assets/fondo-arcoiris.webp');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: 0 -50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-background 2s infinite alternate linear;
+}
+
+@keyframes animate-background {
+  0% {
+      background-position: 0 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
