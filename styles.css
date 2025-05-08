@@ -1,6 +1,10 @@
 :root {
   --primary-color: #b05abb73;
-  --antique-white: antiquewhite;
+  --header-h1: #0087ff;
+  --header-p: #ff008c;
+  --color-de-fondo-header: #f4ffb4;
+  --color-de-fondo: antiquewhite;
+  --color-de-fondo-secundario: #fab4db;
 }
 
 *,
@@ -20,7 +24,7 @@ html {
 
 body {
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--color-de-fondo);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -28,7 +32,7 @@ body {
 
 header {
   width: 100%;
-  background: url("./assets/fondo-de-estrellas.gif");
+  background: var(--color-de-fondo-header);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -42,21 +46,20 @@ header {
 
 header h1 {
   filter: drop-shadow(0 0 1rem white);
-  font-size: 36px;
   text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--header-h1);
 }
 
 header p {
   font-size: 32px;
   margin: 1rem 0;
-  color: rgb(255, 164, 214);
+  color: rgb(255 0 140);
 }
 
 nav {
-  background-image: url("./assets/fondo-arcoiris.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
+  background: var(--header-p);
   height: 80px;
   width: 100%;
   overflow: hidden;
@@ -81,12 +84,12 @@ nav ul li {
 nav ul li a {
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: rgb(255, 0, 149);
+  color: white;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: rgb(219, 0, 91);
+  color: yellow;
 }
 
 main {
@@ -105,7 +108,7 @@ h2 {
 }
 
 .text-container {
-  background-color: var(--antique-white);
+  background-color: var(--color-de-fondo-secundario);
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
@@ -160,30 +163,6 @@ h2 {
   header h1 {
     font-size: 48px;
     text-transform: uppercase;
-  }
-}
-
-.masked-text {
-  font-size: 3rem;
-  font-weight: bold;
-  color: transparent;
-  filter: drop-shadow(0 0 1rem black);
-  background-image: url('./assets/fondo-arcoiris.webp');
-  background-size: 150%;
-  background-repeat: no-repeat;
-  background-position: 0 -50%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate-background 2s infinite alternate linear;
-}
-
-@keyframes animate-background {
-  0% {
-      background-position: 0 50%;
-  }
-  100% {
-      background-position: 100% 50%;
   }
 }
 
